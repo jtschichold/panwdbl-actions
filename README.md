@@ -19,14 +19,14 @@ panwdbl implemented with Github Actions based on ideas from [https://github.com/
 | Feed | Description | URL |
 | ---- | ----------- | --- |
 | DShield Top 20 | DShield.org Recommended Block List | https://raw.githubusercontent.com/jtschichold/panwdbl-actions/dshield/dshieldbl.txt |
-| Tor Exit Nodes | List of Tor Exit Nodes from https://www.dan.me.uk/tornodes | https://raw.githubusercontent.com/jtschichold/panwdbl-actions/dshield/dshieldbl.txt |
+| Tor Exit Nodes | List of Tor Exit Nodes from https://www.dan.me.uk/tornodes | https://raw.githubusercontent.com/jtschichold/panwdbl-actions/tor/exit-nodes.txt |
 | SSL Abuse IP List | SSLBL 30 days block list. See https://sslbl.abuse.ch/blacklist/ | https://raw.githubusercontent.com/jtschichold/panwdbl-actions/sslabuseiplist/sslabuseiplist.txt |
 | Emerging Threats Known Compromised Hosts | See https://doc.emergingthreats.net/bin/view/Main/CompromisedHost | https://raw.githubusercontent.com/jtschichold/panwdbl-actions/etcompromised/etcompromised.txt |
 
 
 ## Missing panwdbl Feeds
 
-Some of the feeds that use to be available on pandwbl haven't be ported to this incarnation. Details below:
+Some of the feeds that used to be available on pandwbl haven't be ported to this incarnation. Details below:
 
 | Feed | Description | URL | Notes |
 | ---- | ----------- | --- | ----- |
