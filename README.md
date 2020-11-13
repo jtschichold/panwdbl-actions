@@ -9,9 +9,9 @@ panwdbl implemented with Github Actions based on ideas from [https://github.com/
 - each IOC feed has a correspending Github Action workflow and a dedicated branch
 - the workflows are triggered based on the schedule specified in each workflow YAML file
 - each workflow:
-    * checks out the branch of the feed
+    * checkouts the branch of the feed
     * grabs the original IOC feed
-    * process it using a dedicated script contained in the branch
+    * process the IOC feed using a dedicated script contained in the branch
     * if there are changes, a commit & push is performed to update the repo contents
 
 ## Feeds
