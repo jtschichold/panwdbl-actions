@@ -21,7 +21,7 @@ jobs:
           mkdir -p temp
       - name: Pull the Block List
         run: |-
-          curl "https://www.dshield.org/block.txt" -o ./temp/block.txt || true
+          curl "https://feeds.dshield.org/block.txt" -o ./temp/block.txt || true
           ./scripts/dshield-ip-list.py ./temp/block.txt > dshieldbl.txt
       - name: Commit
         run: |-
