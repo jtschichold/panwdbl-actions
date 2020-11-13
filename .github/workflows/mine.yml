@@ -20,7 +20,7 @@ jobs:
       - name: Pull the Block List
         run: |-
           curl "https://www.dshield.org/block.txt" -o ./temp/block.txt || true
-          ./scripts/generate-ip-list.py ./temp/block > dshieldbl.txt
+          ./scripts/generate-ip-list.py ./temp/block.txt > dshieldbl.txt
       - name: Commit
         run: |-
           git config user.name "Automated"
