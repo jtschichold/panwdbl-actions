@@ -7,14 +7,24 @@ from ipaddress import (
 )
 from typing import List, Union, Any, cast
 
-result4: List[IPv4Network]
-result6: List[IPv6Network]
+result4: List[IPv4Network] = []
+result6: List[IPv6Network] = []
 
 try:
     with open(sys.argv[1], 'r') as f:
-        results: List[Union[IPv6Network,IPv4Network]] = [ip_network(line.strip()) for line in f]
-    result4 = [r for r in results if isinstance(r, IPv4Network)]
-    result6 = [r for r in results if isinstance(r, IPv6Network)]
+        for line in f:
+            if line.startswith('#'):
+                continue
+
+            _, net_str, _ = line.split(',',2)
+            net = ip_network(net_str)
+
+            if isinstance(net,IPv4Network):
+                result4.append(net)
+            elif isinstance(net,IPv6Network):
+                result6.append(net)
+            else:
+                continue
 
 except Exception as e:
     print(f"Exception translating file {e!r}", file=sys.stderr)
